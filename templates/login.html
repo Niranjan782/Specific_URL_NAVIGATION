@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            background-color: #5f5f5f;
+            border-radius: 5px;
+            padding: 30px;
+            width:  300px;
+        }
+        h2{
+            text-align: center;
+            color: antiquewhite;
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column  ;
+        }
+        input{
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #dbcccc;
+            border: 1px soild black;
+        }
+        button{
+            background-color: rgba(129, 215, 129, 0.667);
+            padding: 10px;
+            border-radius: 8px;
+            color: antiquewhite;
+        }
+        button:hover{
+            background-color: rgba(36, 125, 36, 0.667);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Login</h2>
+        <form>
+            <input type="email" name="" id="" placeholder="Email">
+            <input type="password" name="" id="" placeholder="Password">
+            <button type="submit">Login</button>
+            <h4><a href="{% url 'signup:signup' %}">Click this to go to signup page</a></h4>
+        </form>
+    </div>
+</body>
+</html>

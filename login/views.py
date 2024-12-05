@@ -4,3 +4,7 @@ from django.shortcuts import render
 
 def login(request):
     return render(request,'login.html')
+
+
+def nike(request):
+    return render(request,'nike.html')

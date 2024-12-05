@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Markazi+Text:wght@400..700&display=swap');
+
+body,html{
+    margin:0;
+    padding: 0;
+    font-family: "Markazi Text", serif;
+    height: 100%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.container{
+    background: linear-gradient(165deg, #1a1a1a, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content{
+    text-align: center;
+    /* border: 1px solid black; */
+    max-width: 400%;
+    padding: 2rem;
+    border-radius: 8px;
+
+}
+.logo{
+     width: 170px;
+    object-fit:contain;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input[type="email"]{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+button{
+    padding: 5px;
+    border-radius: 8px;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+    background-color:#a51010;
+
+    
+}
+
+button:hover{
+   background-color:#1a1a1a ;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>NIKE COMING SOON</h2>
+            <p>We are coming soon</p>
+            <img src="https://res.cloudinary.com/dmubfrefi/image/private/s--y0Ax_FO6--/c_crop,h_2813,w_5000,x_0,y_0/c_scale,w_3840/f_auto/q_auto/v1/dee-about-cms-prod-medias/cf68f541-fc92-4373-91cb-086ae0fe2f88/002-nike-logos-swoosh-white.jpg?_a=BAAAV6Bs" class="logo" alt="Nike">
+            <form>
+                <input type="email" name="" id="" placeholder="Enter the email" required>
+                <button type="submit">Notify Me</button>
+                <h4><a href="{% url 'signup:signup' %}">To create an account in Nike click this link</a></h4>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
